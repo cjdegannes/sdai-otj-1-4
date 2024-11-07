@@ -1,22 +1,124 @@
 /* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.7;
-    background-color: #2e2e2e; 
-    color: #ffffff; 
+body, html {
+    height: 100%;
+    font-family: "Hanken Grotesk", sans-serif;
 }
 
-/* Header styling */
-header {
-    background-color: #d35f24; 
-    color: #fff; 
-    padding: 20px 0;
+.background-container {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    position: relative;
+}
+
+.background {
+    width: 50%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.background.left {
+    background-image: url(./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg);
+}
+
+.background.right {
+    background-image: url(./assets/images/pexels-edwardeyer-1247755.jpg);
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(170, 71, 33, .75), rgba(165, 107, 82, .2));
+    display: flex;
+    align-items: center;
     text-align: center;
+    color: #fff;
+}
+
+.overlay h1 {
+    font-size: 5em;
+    background-color: rgba(165, 107, 82, 0.8);
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-shadow: 1.5px 1.5px 2px black;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    color: #fff;
+    vertical-align: text-top;
+    position:absolute;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 30px;
+    word-spacing: 100px;
+}
+
+.buttons ul {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1.5px black;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.buttons ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #fff; 
+}
+   
+.aboutus {
+    word-spacing: normal;
+}
+
+.bg-image {
+    display: flex;
+    background-image: url(./assets/images/pexels-dariabuntaria-5398825.jpg); 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlayA {
+    background: linear-gradient(rgba(170, 72, 33, 0.774), rgba(165, 107, 82, 0.411));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.overlaypara {
+     
 }
 
 nav ul {
@@ -72,10 +174,6 @@ section {
     margin-bottom: 20px;
 }
 
-h2 {
-    color: #d35f24; 
-    margin-bottom: 10px;
-}
 
 .menu-heading {
     text-align: center;
