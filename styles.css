@@ -111,7 +111,7 @@ body, html {
 
 .overlayA {
     background: linear-gradient(rgba(170, 71, 33, .75), rgba(165, 107, 82, .2));
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -142,16 +142,24 @@ body, html {
     border-radius: 8px;
 }
 
+.overlaypara li {
+    font-size: .9em;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 0px auto;
+    max-width:200px;
+}
+
 .image-below {
     width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
+    max-width: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(58, 29, 6, 0.3);
+    max-height: 250px;
 }
 
 .buttons-a {
-    position: fixed;
+    position: absolute;
     margin-top: 25px;
     top: 0;
     margin-left: 30px;
@@ -160,6 +168,77 @@ body, html {
     border-left-style: dotted;
     border-right-style: dotted;
     text-shadow: 1px 1px 1.5px black;
+}
+
+/* Background color */
+.bg-color1 {
+    background: linear-gradient(rgba(170, 71, 33, .75), rgba(165, 107, 82, .2));
+    color: #fff;
+    padding: 20px;
+    background-color: #221f1fad;
+}
+
+/* Content wrapper */
+.content1 {
+    width: 70%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+
+/* Heading styles */
+.overlay-heading1 {
+    text-align: center;
+    font-size: 35px;
+    padding: 5px 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    text-shadow: 1.5px 1.5px 2px rgb(0, 0, 0);
+    margin-top: -15px;
+    width: 100vw;
+}
+
+
+
+/* Paragraph styles for descriptions */
+.overlaypara1 {
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+/* List of menu items */
+.describe1 {
+    list-style-type: square;
+}
+
+.describe1 li {
+    margin-bottom: 15px;
+}
+
+/* Note */
+.note1 {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+/* Navigation styles */
+/* Positioning buttons-a at the top-left */
+.buttons-a1 {
+    position: absolute;
+    margin-top: 25px;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    border-right: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    border-left-style: dotted;
+    border-right-style: dotted;
+    text-shadow: 1px 1px 1.5px black;
+
 }
 
 nav ul {
